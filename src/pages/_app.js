@@ -6,11 +6,13 @@ import "@/styles/Upload.css"
 import "@/styles/ListScreen.css"
 import store from "@/store/index"
 import { Provider } from "react-redux"
-import LoginPage from "./login"
+import { useRouter } from "next/router"
 
-function App({ Component, pageProps }) {
+
+
+function App({ Component, props }) {
   return <Provider store={store}>
-    <LoginPage />
+    <Component {...props} />
   </Provider>
 }
 
