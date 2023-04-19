@@ -1,0 +1,30 @@
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.input-group label{
+    font-size: 1.5rem;
+    width: 90%;
+    color: #272727;
+    padding: 2%;
+}
+
+.input-group input{
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #eef2f8;
+    text-indent: 2%;
+    height: 7vh;
+    border: 1px solid rgb(0,0,0, 0.5);
+    outline: none;
+    width: 90%;
+    transition: 0.3s;
+}
+
+.input-group input:focus{
+    background-color: white;
+}

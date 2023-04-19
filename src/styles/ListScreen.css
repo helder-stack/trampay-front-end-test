@@ -1,0 +1,90 @@
+.list-screen {
+    width: 70%;
+    height: 80vh;
+    margin: auto;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.5);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2%;
+    margin-top: 4%;
+    overflow-y: scroll;
+    box-shadow: 12px 0 10px -5px rgb(0, 0, 0, 0.5), -12px 0 10px -5px rgb(0, 0, 0, 0.5);
+}
+
+.list-screen table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 2%;
+}
+
+.list-screen td {
+    text-align: center;
+    padding: 4%;
+}
+
+.list-screen tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+}
+
+.list-screen td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list-screen .header{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgb(0,0,0,0.5);
+}
+
+
+.pageButton{
+    color: blue;
+    cursor: pointer;
+}
+
+.pagination{
+    width: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+table h4{
+    width: 100%;
+    text-align: center;
+}
+
+.active{
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 700px) {
+    .list-screen {
+        width: 90%;
+    }
+    .list-screen table{
+        width: 150vw;
+        overflow-x: scroll;
+    }
+    .list-screen tr{
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+    }
+
+    .pagination{
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
